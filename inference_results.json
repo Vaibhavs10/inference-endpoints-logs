@@ -1,0 +1,114 @@
+[
+  {
+    "model_id": "openai-community/gpt2-large",
+    "task": "text-generation",
+    "success": true,
+    "error_message": null,
+    "response": " I'm so glad you're here. I'm so glad you're here. I'm so glad you're here. I'm so glad you're here. I'm so glad you're here. I'm so glad you're here. I'm so glad you're here. I'm so glad you're here. I'm so glad you're here. I'm so glad you're here. I'm so glad you're here. I'm so glad you're here. I'm so glad"
+  },
+  {
+    "model_id": "openai-community/gpt2-xl",
+    "task": "text-generation",
+    "success": true,
+    "error_message": null,
+    "response": " I'm doing well. I'm doing well. I'm doing well. I'm doing well. I'm doing well. I'm doing well. I'm doing well. I'm doing well. I'm doing well. I'm doing well. I'm doing well. I'm doing well. I'm doing well. I'm doing well. I'm doing well. I'm doing well. I'm doing well. I'm doing well. I'm doing well. I'm doing well."
+  },
+  {
+    "model_id": "openai-community/gpt2",
+    "task": "text-generation",
+    "success": true,
+    "error_message": null,
+    "response": "\n\nI'm a little bit of a nerd. I'm a big nerd. I'm a big nerd. I'm a big nerd. I'm a big nerd. I'm a big nerd. I'm a big nerd. I'm a big nerd. I'm a big nerd. I'm a big nerd. I'm a big nerd. I'm a big nerd. I'm a big nerd. I'm a big nerd. I'm a big nerd. I'm a big nerd"
+  },
+  {
+    "model_id": "EleutherAI/gpt-neo-2.7B",
+    "task": "text-generation",
+    "success": true,
+    "error_message": null,
+    "response": ""
+  },
+  {
+    "model_id": "microsoft/DialoGPT-medium",
+    "task": "text-generation",
+    "success": true,
+    "error_message": null,
+    "response": ""
+  },
+  {
+    "model_id": "Gustavosta/MagicPrompt-Stable-Diffusion",
+    "task": "text-generation",
+    "success": true,
+    "error_message": null,
+    "response": "  Wearing uniform! intricate, elegant, highly detailed, digital painting, artstation, concept art, smooth, sharp focus, illustration, art by artgerm and greg rutkowski and alphonse mucha\n"
+  },
+  {
+    "model_id": "OpenAssistant/oasst-sft-4-pythia-12b-epoch-3.5",
+    "task": "text-generation",
+    "success": true,
+    "error_message": null,
+    "response": "\n\nI am a large language model trained to answer questions and provide information. How can I help you today?\n\nI can answer questions on a wide range of topics, from science and technology to history and literature. I can also provide information on a variety of subjects, from current events to health and wellness.\n\nFeel free to ask me anything, and I will do my best to provide helpful and accurate answers.\n\nThank you for your interest in me, and I look"
+  },
+  {
+    "model_id": "bigcode/starcoder",
+    "task": "text-generation",
+    "success": true,
+    "error_message": null,
+    "response": " I am fine, thank you. And you?')\nprint(result)\n\n# 2. \u8bed\u97f3\u8f6c\u6587\u672c\nresult = aipSpeech.asr(audio_file, 'wav', 16000, {\n    'dev_pid': 1537,\n})\nprint(result)\n\n# 3. \u6587\u672c\u8f6c\u8bed\u97f3\nresult = aipSpeech.synthesis('\u4f60\u597d\uff0c\u6b22\u8fce\u4f7f\u7528\u8bed\u97f3\u5408\u6210"
+  },
+  {
+    "model_id": "tiiuae/falcon-7b-instruct",
+    "task": "text-generation",
+    "success": true,
+    "error_message": null,
+    "response": "\nI'm doing well, thank you. I'm glad to hear that you're doing well too.\nI'm doing well, thank you. I'm glad to hear that you're doing well too.\nI'm doing well, thank you. I'm glad to hear that you're doing well too.\nI'm doing well, thank you. I'm glad to hear that you're doing well too.\nI'm"
+  },
+  {
+    "model_id": "JackFram/llama-160m",
+    "task": "text-generation",
+    "success": true,
+    "error_message": null,
+    "response": " I am looking for a good good good good good good good good good good good good good good good good good good good good good good good good good good good good good good good good good good good good good good good good good good good good good good good good good good good good good good good good good good good good good good good good good good good good good good good good good good good good good good good good good good good good good good good good good good good good good good good"
+  },
+  {
+    "model_id": "meta-llama/Llama-2-7b-chat-hf",
+    "task": "text-generation",
+    "success": true,
+    "error_message": null,
+    "response": " I'm doing well, thanks for asking! *smiles* It's great to see you here.\n\nI hope you're having a wonderful day and enjoying the beautiful weather. *glances around* It's such a lovely day outside, isn't it?\n\nI'm just here, enjoying the peace and quiet of this lovely park. *sighs contentedly* It's so nice to have a moment to myself,"
+  },
+  {
+    "model_id": "codellama/CodeLlama-7b-hf",
+    "task": "text-generation",
+    "success": true,
+    "error_message": null,
+    "response": "\n\nI'm fine, thank you.\n\nI'm fine, thank you.\n\nI'm fine, thank you.\n\nI'm fine, thank you.\n\nI'm fine, thank you.\n\nI'm fine, thank you.\n\nI'm fine, thank you.\n\nI'm fine, thank you.\n\nI'm fine, thank you.\n\nI'm fine, thank you."
+  },
+  {
+    "model_id": "codellama/CodeLlama-13b-hf",
+    "task": "text-generation",
+    "success": true,
+    "error_message": null,
+    "response": "\n\nI am fine.\n\nHow is your day?\n\nIt is good.\n\nHow is your day?\n\nIt is good.\n\nHow is your day?\n\nIt is good.\n\nHow is your day?\n\nIt is good.\n\nHow is your day?\n\nIt is good.\n\nHow is your day?\n\nIt is good.\n\nHow is your day?\n\nIt is good.\n\nHow"
+  },
+  {
+    "model_id": "codellama/CodeLlama-34b-Instruct-hf",
+    "task": "text-generation",
+    "success": true,
+    "error_message": null,
+    "response": "\nI'm fine, thank you.\nI'm glad to hear that.\nI'm not very well.\nI'm sorry to hear that.\nI'm a little tired.\nI'm a little hungry.\nI'm a little thirsty.\nI'm a little cold.\nI'm a little hot.\nI'm a little tired.\nI'm a little bored.\nI'm a"
+  },
+  {
+    "model_id": "mistralai/Mistral-7B-v0.1",
+    "task": "text-generation",
+    "success": true,
+    "error_message": null,
+    "response": "\n\nI\u2019m doing well, thank you.\n\nI\u2019m writing this post from my bed, which is a rare occurrence. I\u2019m usually writing from my desk, but I\u2019m feeling a little under the weather today.\n\nI\u2019m not sure if it\u2019s the weather, or if I\u2019m coming down with something, but I\u2019m feeling a little under the weather.\n\nI\u2019m not sure if it\u2019s the weather,"
+  },
+  {
+    "model_id": "mistralai/Mistral-7B-Instruct-v0.1",
+    "task": "text-generation",
+    "success": true,
+    "error_message": null,
+    "response": "\n\nI'm doing well, thank you for asking. I'm excited to be here and help you with any questions you may have. Is there anything specific you would like to know?"
+  }
+]

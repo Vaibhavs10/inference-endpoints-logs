@@ -13,42 +13,42 @@ client = InferenceClient()
 results = []
 
 for model in models_data:
-    model_id = model['model_id']
-    task = model['task']
+    model_id = model['id']
+    task = model['pipeline_tag']
     
     print(f"Processing model: {model_id}")
-    
-    try:
-        if task == 'text-generation':
+    if task == 'text-generation':
+        try:
             response = client.text_generation("Hello, how are you?", model=model_id)
-        elif task == 'summarization':
-            response = client.summarization("Your long text to summarize here", model=model_id)
-        elif task == 'question-answering':
-            response = client.question_answering("What is the capital of France?", "France is a country in Europe.", model=model_id)
-        elif task == 'image-classification':
-            with open('sample_image.jpg', 'rb') as image_file:
-                response = client.image_classification(image_file, model=model_id)
+            response = client.text_generation("Hello, how are you?", model=model_id)
+        # elif task == 'summarization':
+        #     response = client.summarization("Your long text to summarize here", model=model_id)
+        # elif task == 'question-answering':
+        #     response = client.question_answering("What is the capital of France?", "France is a country in Europe.", model=model_id)
+        # elif task == 'image-classification':
+        #     with open('sample_image.jpg', 'rb') as image_file:
+        #         response = client.image_classification(image_file, model=model_id)
         # Add more task types as needed
-        
-        success = True
-        error_message = None
-    except Exception as e:
-        success = False
-        error_message = str(e)
-        response = None
+
+            success = True
+            error_message = None
+        except Exception as e:
+            success = False
+            error_message = str(e)
+            response = None
     
-    result = {
-        'model_id': model_id,
-        'task': task,
-        'success': success,
-        'error_message': error_message,
-        'response': response
-    }
+        result = {
+            'model_id': model_id,
+            'task': task,
+            'success': success,
+            'error_message': error_message,
+            'response': response
+        }
     
-    results.append(result)
+        results.append(result)
     
     # Add a small delay to avoid rate limiting
-    time.sleep(1)
+        time.sleep(1)
 
 # Save results to file
 with open('inference_results.json', 'w') as f:
