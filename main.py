@@ -17,18 +17,17 @@ for model in models_data:
     task = model['pipeline_tag']
     
     print(f"Processing model: {model_id}")
-    if task == 'text-generation':
+    if task in ['text-generation', 'summarization', 'question-answering']:
         try:
-            response = client.text_generation("Hello, how are you?", model=model_id)
-            response = client.text_generation("Hello, how are you?", model=model_id)
-        # elif task == 'summarization':
-        #     response = client.summarization("Your long text to summarize here", model=model_id)
-        # elif task == 'question-answering':
-        #     response = client.question_answering("What is the capital of France?", "France is a country in Europe.", model=model_id)
-        # elif task == 'image-classification':
-        #     with open('sample_image.jpg', 'rb') as image_file:
-        #         response = client.image_classification(image_file, model=model_id)
-        # Add more task types as needed
+            if task == 'text-generation':
+                response = client.text_generation("Hello, how are you?", model=model_id)
+            elif task == 'summarization':
+                response = client.summarization("Your long text to summarize here", model=model_id)
+            elif task == 'question-answering':
+                response = client.question_answering("What is the capital of France?", "France is a country in Europe.", model=model_id)
+            # elif task == 'image-classification':
+            #     with open('sample_image.jpg', 'rb') as image_file:
+            #         response = client.image_classification(image_file, model=model_id)
 
             success = True
             error_message = None
@@ -36,7 +35,7 @@ for model in models_data:
             success = False
             error_message = str(e)
             response = None
-    
+
         result = {
             'model_id': model_id,
             'task': task,
@@ -44,9 +43,9 @@ for model in models_data:
             'error_message': error_message,
             'response': response
         }
-    
+
         results.append(result)
-    
+
     # Add a small delay to avoid rate limiting
         time.sleep(1)
 
