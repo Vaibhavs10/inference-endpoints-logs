@@ -1,16 +1,12 @@
-import requests
 import json
+from huggingface_hub.utils._pagination import paginate
 
-def persist_models_to_json(url):
-    response = requests.get(url)
-    if response.status_code == 200:
-        models_data = response.json()
-        with open('models_data.json', 'w') as json_file:
-            json.dump(models_data, json_file)
-        print("Models data persisted to models_data.json successfully.")
-    else:
-        print(f"Failed to fetch models data. Status code: {response.status_code}")
+endpoint = "https://huggingface.co/api/models"
+params = {"inference": "warm"}
 
-url = "https://huggingface.co/api/models?inference=warm"
+results = []
+for page in paginate(endpoint, params=params, headers={}):
+    results.append(page)
 
-persist_models_to_json(url)
+with open('models_data.json', 'w') as f:
+    json.dump(results, f, indent=4)
